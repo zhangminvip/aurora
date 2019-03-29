@@ -26,3 +26,5 @@ secret
 pgdata/
 .idea/
 LICENSE.txt
+*.log
+*.pid

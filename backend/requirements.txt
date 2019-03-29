@@ -1,14 +1,13 @@
-Django==1.11
-djangorestframework
-psycopg2
-django-cors-headers
+django==2.1.7
+uwsgi==2.0.18
+psycopg2==2.7.7
 
+
+djangorestframework
+django-cors-headers
 markdown
 html2text
-pycurl
 bleach
 beautifulsoup4
-
-Pillow	
-	
+Pillow
 requests

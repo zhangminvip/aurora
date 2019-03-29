@@ -1,10 +1,11 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 
 # Set the file maintainer (your name - the file's author)
-MAINTAINER Ray Alez
+MAINTAINER Min Zhang
 
+COPY sources.list /etc/apt/
 # Install Nginx.	
-RUN apt-get update && apt-get install -y nginx
+RUN  apt-get update && apt-get install -y nginx
 
 # Turn off daemon mode
 RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
