@@ -28,3 +28,4 @@ pgdata/
 LICENSE.txt
 *.log
 *.pid
+.vscode
