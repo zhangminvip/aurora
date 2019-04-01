@@ -1,0 +1,1 @@
+python manage.py runserver localhost:8081 --settings backend.local
