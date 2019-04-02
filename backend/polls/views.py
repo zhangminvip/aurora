@@ -4,6 +4,7 @@ from django.urls import reverse
 from .models import Question, Choice
 from django.db.models import F
 from django.views import generic
+from django.utils import timezone
 
 
 
@@ -11,7 +12,7 @@ from django.views import generic
 # Create your views here.
 
 def index(request):
-    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    latest_question_list = Question.objects.filter(pub_date__lte=timezone.localtime()).order_by('-pub_date')[:5]
     context = {
         'latest_question_list': latest_question_list,
     }
