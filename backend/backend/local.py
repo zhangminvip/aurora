@@ -10,18 +10,19 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
-from backend.settings import *
+# from backend.settings import *
 import os
 from django.conf import settings
 from django.conf.urls.static import static
 
 
-MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
-STATIC_ROOT=os.path.join(BASE_DIR, 'static')
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 
 
 # Quick-start development settings - unsuitable for production
