@@ -29,3 +29,4 @@ LICENSE.txt
 *.log
 *.pid
 .vscode
+backend/static/
