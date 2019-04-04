@@ -1,3 +1,6 @@
+![avatar](https://github.com/zhangminvip/aurora/blob/iss1/archi/Aurora_Web_Architecture.png)
+
+
 python manage.py test  polls  --settings backend.local
 
 dev:
