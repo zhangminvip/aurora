@@ -22,11 +22,12 @@ router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'permission', views.PermissionViewSet)
-
+# router.register(r'question', views.QuestionSerializer,basename='Question')
 
 urlpatterns = [
     path('polls/', include('polls.urls',  namespace="polls")),
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+    path('', include('snippets.urls')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

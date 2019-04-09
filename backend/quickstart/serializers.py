@@ -1,10 +1,12 @@
-from django.contrib.auth.models import User, Group
+from django.contrib.auth.models import User, Group, Permission
 from rest_framework import serializers
-from django.contrib.auth.models import Permission
+from polls.models import Question
 
-class PermissionSerializer(serializers.HyperlinkedModelSerializer):
+class PermissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Permission
+        fields = '__all__'
+        
 
 class  UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -24,3 +26,9 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         # exclude = ('group_permissions',)
         fields = '__all__'
         # lookup_field = 'name'
+
+
+
+
+
+        
