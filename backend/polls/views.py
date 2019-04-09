@@ -86,8 +86,10 @@ def question_list(request):
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors, status=400)
 
+# from rest_framework import viewsets
 
-
-
+# class QuestionViewSet(viewsets.ModelViewSet):
+#     queryset = Question.objects.all()
+#     serializer_class = QuestionSerializer
     
 
